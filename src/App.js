@@ -1,4 +1,5 @@
 import { Switch, Route, Redirect } from 'react-router';
+import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
 
 import Home from './pages/Home/Home.page';
@@ -21,33 +22,34 @@ const firebaseConfig = {
 initializeApp(firebaseConfig);
 
 export const auth = getAuth();
-onAuthStateChanged(auth, (user) => {
-	if (user) {
-		console.log(user);
-	} else {
-	}
-});
 
 function App() {
+	const dispatch = useDispatch();
+	const user = useSelector((state) => state.user);
+
+	onAuthStateChanged(auth, (user) => {
+		if (user) {
+			dispatch({ type: 'SAVE_USER', payload: user.providerData[0] });
+		}
+	});
+
 	return (
 		<div>
 			<Switch>
 				<Route
 					exact
 					path='/'
-					render={() =>
-						auth.currentUser ? <Home /> : <Redirect to='/login' />
-					}
+					render={() => (user ? <Home /> : <Redirect to='/login' />)}
 				/>
 				<Route
 					exact
 					path='/login'
-					render={() => (auth.currentUser ? <Redirect to='/' /> : <Login />)}
+					render={() => (user ? <Redirect to='/' /> : <Login />)}
 				/>
 				<Route
 					exact
 					path='/signup'
-					render={() => (auth.currentUser ? <Redirect to='/' /> : <SignUp />)}
+					render={() => (user ? <Redirect to='/' /> : <SignUp />)}
 				/>
 			</Switch>
 		</div>
