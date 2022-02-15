@@ -1,0 +1,18 @@
+button {
+	color: #1c437e;
+	background-color: white;
+	font-size: 20px;
+	font-weight: 600;
+	padding: 0.5rem 3rem;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.sign-up-button {
+	top: 78%;
+}
+
+.login-button {
+	top: 72%;
+}

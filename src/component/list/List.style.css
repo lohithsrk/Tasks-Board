@@ -1,0 +1,28 @@
+.list-container {
+	position: relative;
+	border: 1px solid #1c437e;
+	width: 20rem;
+	padding: 1rem 1rem 0rem 1rem;
+	margin: 2rem;
+}
+
+.list-header {
+	position: relative;
+	width: 100%;
+	height: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #1c437e;
+	font-size: 1.2rem;
+}
+
+.list-header span {
+	position: relative;
+	width: 1.5rem;
+}
+
+.list-body {
+	position: relative;
+	width: 100%;
+}

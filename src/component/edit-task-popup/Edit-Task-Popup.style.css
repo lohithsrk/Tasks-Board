@@ -1,0 +1,129 @@
+.edit-task-popup-container {
+	width: 100vw;
+	height: calc(100vh - 4rem);
+	position: absolute;
+	z-index: 2;
+	left: 0rem;
+	background-color: rgba(28, 68, 129, 0.4);
+}
+
+.utilities {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.bin,
+.close-svg {
+	width: 1.6rem;
+	position: relative;
+	cursor: pointer;
+}
+
+.edit-task-popup {
+	width: 25rem;
+	height: fit-content;
+	background-color: white;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #1c437e;
+	padding: 2rem;
+	overflow: hidden;
+}
+
+.list-title {
+	padding: 0.5rem 1rem;
+	font-size: 1.3rem;
+}
+
+.edit-task-popup textarea {
+	position: relative;
+	width: 100%;
+	height: 6rem;
+	background-color: rgba(204, 204, 204, 0.3);
+	resize: none;
+	padding: 1rem;
+	margin-top: 1rem;
+	outline: none;
+}
+
+.submit {
+	position: absolute;
+	right: 2rem;
+	width: 3rem;
+	height: 3rem;
+	bottom: 2rem;
+}
+
+.submit svg {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+}
+
+.submit input {
+	position: absolute;
+	z-index: 2;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+}
+
+input[type='date'] {
+	cursor: pointer;
+	padding: 1rem 0;
+	outline: none;
+}
+
+.transfer {
+	cursor: pointer;
+}
+
+.all-list {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: -100%;
+	background-color: white;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	transition: all 0.5s ease-in-out;
+}
+
+.all-list div {
+	text-align: center;
+	font-size: 1.3rem;
+	margin: 0.3rem;
+	cursor: pointer;
+	transition: all 0.1s ease-in-out;
+}
+.all-list div:hover {
+	font-size: 1.8rem;
+}
+
+.all-list div:last-of-type {
+	cursor: default;
+}
+
+.up-arrow {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	height: 2rem;
+	display: flex;
+	justify-content: center;
+}
+
+.up-arrow svg {
+	width: 3rem;
+	cursor: pointer;
+}

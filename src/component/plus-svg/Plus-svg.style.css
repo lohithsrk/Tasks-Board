@@ -1,0 +1,18 @@
+.plus-svg {
+	color: #1c437e;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 5rem;
+	margin: 0 2rem 2rem 0;
+	cursor: pointer;
+}
+
+.input-plus-svg {
+	position: absolute;
+	z-index: 1;
+	color: #1c437e;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}

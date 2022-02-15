@@ -1,0 +1,32 @@
+.input::placeholder {
+	color: #2f60aa;
+}
+
+.input-container {
+	color: white;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	margin-top: 3rem;
+}
+
+.label {
+	position: absolute;
+	top: -14px;
+	padding: 0 5px;
+	background-color: #1c437e;
+	cursor: pointer;
+}
+
+.input {
+	background-color: transparent;
+	width: 25rem;
+	height: 3rem;
+	border: 1px solid white;
+	padding: 1rem;
+}
+
+.input:focus {
+	border: 3px solid white;
+	outline: none;
+}

@@ -1,0 +1,60 @@
+.task-container {
+	width: 100%;
+	position: relative;
+	color: #1c437e;
+	margin: 0.5rem 0;
+}
+
+.details {
+	position: relative;
+	padding: 0 0 0.5rem 5rem;
+	font-size: 0.8rem;
+	width: 100%;
+	word-wrap: break-word;
+}
+
+.date {
+	position: relative;
+	margin: 0 0 1rem 5rem;
+	font-size: 0.7rem;
+	padding: 0.3rem 1rem;
+	font-weight: 700;
+	border-radius: 5px;
+	background-color: rgba(28, 67, 126, 0.1);
+	display: inline-block;
+}
+
+.task {
+	position: relative;
+	align-items: center;
+	width: 100%;
+	height: 3rem;
+	display: flex;
+}
+
+.check-circle {
+	width: 2.8rem;
+	position: relative;
+	margin-left: 0.3rem;
+	cursor: pointer;
+}
+
+.green-check-circle,
+.completed {
+	color: #299e29;
+}
+
+.taskTitle {
+	position: relative;
+	padding-left: 2rem;
+}
+
+.edit-svg {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	width: 1.6rem;
+	cursor: pointer;
+	align-self: center;
+}

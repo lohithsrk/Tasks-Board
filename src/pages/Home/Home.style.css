@@ -1,0 +1,16 @@
+.list-grid {
+	position: relative;
+	top: 4rem;
+	display: grid;
+	padding: 0 3%;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.popup-container {
+	position: absolute;
+	width: 100vw;
+	height: calc(100vh - 4rem);
+	z-index: 1;
+	bottom: 0;
+	background-color: rgba(28, 68, 129, 0.4);
+}
